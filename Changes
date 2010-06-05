@@ -1,2 +1,7 @@
+0.02  Thu, 03 Jun 2010 19:39:11 +0200
+  * Allow checking for trailing whitespace.
+    This is enabled by default, but can be turned off with
+    trailing_whitespace = 0.
+
 0.01  Sat, 29 May 2010 17:02:08 +0200
   * Split off of Dist::Zilla::Plugin::SanityTests.
