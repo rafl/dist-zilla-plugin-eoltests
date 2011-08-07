@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::EOLTests;
-# ABSTRACT: Release tests making sure correct line endings are used
+# ABSTRACT: Author tests making sure correct line endings are used
 
 use Moose;
 use namespace::autoclean;
@@ -13,7 +13,7 @@ This is an extension of L<Dist::Zilla::Plugin::InlineFiles>, providing
 the following files:
 
 =for :list
-* xt/release/eol.t
+* xt/author/eol.t
 a standard Test::EOL test
 
 =attr trailing_whitespace
@@ -48,7 +48,7 @@ __PACKAGE__->meta->make_immutable;
 1;
 
 __DATA__
-___[ xt/release/eol.t ]___
+___[ xt/author/eol.t ]___
 use strict;
 use warnings;
 use Test::More;
