@@ -50,7 +50,7 @@ L<Test::EOL/all_perl_files_ok>. It defaults to C<1>.
 =cut
 
 __DATA__
-___[ xt/author/eol.t ]___
+___[ xt/author/test-eol.t ]___
 use strict;
 use warnings;
 use Test::More;
