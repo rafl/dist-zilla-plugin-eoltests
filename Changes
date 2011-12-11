@@ -1,3 +1,6 @@
+Revision history for {{$dist->name}}
+{{$NEXT}}
+
 0.02	2010-06-03
 	- Allow checking for trailing whitespace.
 	  This is enabled by default, but can be turned off with
