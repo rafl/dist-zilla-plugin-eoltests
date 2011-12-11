@@ -1,28 +1,12 @@
 package Dist::Zilla::Plugin::Test::EOL;
-# ABSTRACT: Author tests making sure correct line endings are used
-
 use Moose;
 use namespace::autoclean;
+
+# VERSION
 
 extends 'Dist::Zilla::Plugin::InlineFiles';
 with 'Dist::Zilla::Role::TextTemplate';
 
-=head1 DESCRIPTION
-
-This is an extension of L<Dist::Zilla::Plugin::InlineFiles>, providing
-the following files:
-
-=for :list
-* xt/author/eol.t
-a standard Test::EOL test
-
-=attr trailing_whitespace
-
-If this option is set to a true value,
-C<< { trailing_whitespace => 1 } >> will be passed to
-L<Test::EOL/all_perl_files_ok>. It defaults to C<1>.
-
-=cut
 
 has trailing_whitespace => (
     is      => 'ro',
@@ -46,6 +30,24 @@ around add_file => sub {
 __PACKAGE__->meta->make_immutable;
 
 1;
+# ABSTRACT: Author tests making sure correct line endings are used
+
+=head1 DESCRIPTION
+
+This is an extension of L<Dist::Zilla::Plugin::InlineFiles>, providing
+the following files:
+
+=for :list
+* xt/author/eol.t
+a standard Test::EOL test
+
+=attr trailing_whitespace
+
+If this option is set to a true value,
+C<< { trailing_whitespace => 1 } >> will be passed to
+L<Test::EOL/all_perl_files_ok>. It defaults to C<1>.
+
+=cut
 
 __DATA__
 ___[ xt/author/eol.t ]___
