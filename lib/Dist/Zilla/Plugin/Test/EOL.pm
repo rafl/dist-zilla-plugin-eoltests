@@ -54,8 +54,6 @@ ___[ xt/author/test-eol.t ]___
 use strict;
 use warnings;
 use Test::More;
-
-eval 'use Test::EOL';
-plan skip_all => 'Test::EOL required' if $@;
+use Test::Requires qw( Test::EOL );
 
 all_perl_files_ok({ trailing_whitespace => {{ $trailing_ws }} });
