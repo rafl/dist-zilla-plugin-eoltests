@@ -1,4 +1,4 @@
-package Dist::Zilla::Plugin::EOLTests;
+package Dist::Zilla::Plugin::Test::EOL;
 # ABSTRACT: Author tests making sure correct line endings are used
 
 use Moose;
