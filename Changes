@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.04      2012-01-09
+	- Give RAFL more credit
+
 0.03      2011-12-11
 	- Fork from Dist::Zilla::Plugin::EOLTests
 	- make an author test
