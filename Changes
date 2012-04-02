@@ -2,6 +2,12 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.05      2012-04-02
+	- add Test::EOL dep ( dolmen )
+	- use Test::EOL in generated test ( dolmen )
+	- fix bugtracker url
+	- add a simple test to check that the test compiles
+
 0.04      2012-01-09
 	- Give RAFL more credit
 
