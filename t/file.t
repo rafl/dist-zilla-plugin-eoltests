@@ -29,6 +29,7 @@ my $fn
 
 ok ( -e $fn, 'test file exists');
 
-script_compiles( '' .$fn->relative, 'check test compiles' );
+script_compiles( '' . $fn->relative, 'check test compiles' );
+script_runs    ( '' . $fn->relative, 'check test runs'     );
 
 done_testing;
