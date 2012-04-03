@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.06      2012-04-03
+	- attempt to fix issue where Test::EOL is added to prereqs of consuming
+	  dists
+
 0.05      2012-04-02
 	- add Test::EOL dep ( dolmen )
 	- use Test::EOL in generated test ( dolmen )
