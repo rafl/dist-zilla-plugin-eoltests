@@ -66,6 +66,7 @@ ___[ xt/author/test-eol.t ]___
 use strict;
 use warnings;
 use Test::More;
-use Test::EOL;
+eval "use Test::EOL; 1;" or die $@;
+# ^^ hack to get around prereqscanner detection, remove someday
 
 all_perl_files_ok({ trailing_whitespace => {{ $trailing_ws }} });
