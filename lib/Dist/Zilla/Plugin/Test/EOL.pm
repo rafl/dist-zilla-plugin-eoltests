@@ -9,27 +9,27 @@ with 'Dist::Zilla::Role::TextTemplate';
 
 
 has trailing_whitespace => (
-    is      => 'ro',
-    isa     => 'Bool',
-    default => 1,
+	 is      => 'ro',
+	 isa     => 'Bool',
+	 default => 1,
 );
 
 around add_file => sub {
-    my ($orig, $self, $file) = @_;
-    return $self->$orig(
-        Dist::Zilla::File::InMemory->new({
-            name    => $file->name,
-            content => $self->fill_in_string(
-                $file->content,
-                {
-					name        => __PACKAGE__,
-					version     => __PACKAGE__->VERSION
-						|| 'bootstrapped version',
-					trailing_ws => \$self->trailing_whitespace
-				},
-            ),
-        }),
-    );
+	 my ($orig, $self, $file) = @_;
+	 return $self->$orig(
+		  Dist::Zilla::File::InMemory->new({
+				name    => $file->name,
+				content => $self->fill_in_string(
+					$file->content,
+					{
+						name    => __PACKAGE__,
+						version => __PACKAGE__->VERSION
+							|| 'bootstrapped version',
+						trailing_ws => \$self->trailing_whitespace
+					},
+				),
+		  }),
+	 );
 };
 
 __PACKAGE__->meta->make_immutable;
