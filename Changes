@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.10      2013-12-18
+	- forgot to update encoding and contributors
+
 0.09      2013-12-18
 	- rerelease because of DZP::Test::Compile problem on windows
 
