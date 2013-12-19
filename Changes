@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.09      2013-12-18
+	- rerelease because of DZP::Test::Compile problem on windows
+
 0.08      2013-09-07
 	- revert change added in 0.06, Dist::Zilla should now be handling this
 	  correctly, update your Dist::Zilla if you're having a problem. If you're
