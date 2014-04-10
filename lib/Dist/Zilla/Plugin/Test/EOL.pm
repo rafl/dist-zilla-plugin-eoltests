@@ -55,6 +55,9 @@ If this option is set to a true value,
 C<< { trailing_whitespace => 1 } >> will be passed to
 L<Test::EOL/all_perl_files_ok>. It defaults to C<1>.
 
+What this option is going to do is test for the lack of trailing whitespace at
+the end of the lines (also known as "trailing space").
+
 =head1 ACKNOWLEDGMENTS
 
 This module is a fork of L<Dist::Zilla::Plugin::EOLTests> and was originally
