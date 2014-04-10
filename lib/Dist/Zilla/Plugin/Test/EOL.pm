@@ -61,8 +61,9 @@ the end of the lines (also known as "trailing space").
 =head1 ACKNOWLEDGMENTS
 
 This module is a fork of L<Dist::Zilla::Plugin::EOLTests> and was originally
-written by Florian Ragwitz. It was forked because author the Test:: namespace
-is preferred and because I would prefer to have EOL tests be Author tests.
+written by Florian Ragwitz. It was forked because the Test:: namespace
+is preferred for test modules, and because I would prefer to have EOL tests
+be Author tests.
 
 =cut
 
