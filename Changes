@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.11      2014-04-10
+	- improve docs
+
 0.10      2013-12-18
 	- forgot to update encoding and contributors
 
